@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* ����� : width 640px �̸� */
+body {font-size:100%; line-height:1em;}
+.ui-content {padding:2em 0;}
+.sub-cont {padding:10px 5px!important;}
+
+/* Layout */
+/* .header   {display:block; width:100%; background-color:#fff;}*/
+.main-btn {width:100%}
+.txt-type1 {display:none;}
+
+/* font */
+h1 {font-size:120%; line-height:1.5em; } /* all=2.625em */
+h2 {font-size:100%; line-height:1.2em; }
+
+/* main */
+@media all and (max-width:320px) {
+.cont-tit {width:100%;padding:20px 0}
+}
+.txt-tit-box {margin-top:10em; padding:2px 0;}
+.txt-type1 {margin-top:0; }
+.txt-type2 {margin:1em 0;}
+.txt-type2 p {font-size:1em;}
+
+.ui-btn.ui-btn-c, .ui-btn.ui-btn-c:hover {font-size: 1em;}
+.ui-btn.ui-btn-d, .ui-btn.ui-btn-d:hover {font-size: 1em;}
+
+.groom-wrap,
+.bride-wrap {margin-top:310px}
+
+/* guestbook */
+
+
+/* gallery */
+.gal-box1 {width:50%;}
+.gal-box2 {width:50%;}
+.gal-box3 {width:100%;}
+.gal-box4 {width:100%;}
+.gal-box2 .gal-3 {width:94%;}
+.gal-box3 .gal-4 {width:97%; height:150px;}
+.gal-box3 .gal-5 {width:97%;}
+.gal-box4 .gal-6 {width:40%;}
+.gal-box4 .gal-7 {width:54%;}
+.gal-box4 .gal-8 {width:97%;}
+
+.gal_more {right:5px}
+
+@media all and (max-width: 480px) {
+	.gal_more {width:98%; right:0; background-position:95% 50%;}
+}
+
+/* movie */
+
+
+
+/* location */
+.tab-menu ul li{width:10%; font-size:14px;}
+.tab-menu ul li:first-child,
+.tab-menu ul li:last-child {width:45%;}
+.btn.theme-c {white-space:nowrap; padding:5px 20px;}
+
+.hr {width:70%;} 
+
+.nav-a {display:none;}
+.nav-m {display:block;}
+
+.lo-wrap {margin-top:50px;}
+.lo-info dl {margin-top:10px; line-height:1.5em; }
+.lo-info dl dt {float:none; }
+.lo-info dl dd {margin-bottom:10px; padding-left:0px;}
+.lo-info dl dd span {display:block; margin-bottom:2px;}
+.lo-info dl dd span:first-child {margin-top:10px;}
+
+.article {cursor:default;}
+.article:hover em {visibility:hidden;}
+
+/* footer */
+/*.footer h4{display:block;}
+.footer h4 span {display:none;}*/
+.footer ul {padding:1em 0 0.8em;}
+.footer img {width:10px; height:14px;}
