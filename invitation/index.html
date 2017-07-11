@@ -231,8 +231,10 @@ $(function(){
 		var zoomlv = 11;
 
 		var markerTarget = new naver.maps.LatLng($map_lat , $map_lon);
+		var mapCenter = new naver.maps.LatLng(37.521826 , 126.921720);
+
 		var map = new naver.maps.Map($map_canvas[0], {
-			center: markerTarget,
+			center: mapCenter,
 			zoom: zoomlv,
 			zoomControl: true,
 			zoomControlOptions: {
@@ -253,7 +255,7 @@ $(function(){
 		});
 
 
-		map.setCenter(markerTarget);		// 마커 위치 지도 센터
+		map.setCenter(mapCenter);		// 마커 위치 지도 센터
 		marker.setPosition(markerTarget);
 		marker.setMap(map);
 
