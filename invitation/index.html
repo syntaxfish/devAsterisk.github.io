@@ -305,53 +305,6 @@ $(function(){
 
 	}
 
-	function callKimNavi(md){
-		alert('모바일기기에서만 가능합니다.');
-	}
-	
-	function callKakaoNavi(md){
-		var $map_addr, $map_lat, $map_lon
-		alert('모바일기기에서만 가능합니다.');
-	}
-
-
-	var $map_addr=''
-	var $map_lat=''
-	var $map_lon='';
-
-	function callOllehNavi(md){
-		alert('모바일기기에서만 가능합니다.');
-	}
-
-
-function callTmapNavi(md){
-	//console.log(md);
-
-		alert('모바일기기에서만 가능합니다.');
-	}
-
-	$( '.swipebox' ).swipebox({
-		hideBarsOnMobile : false, // false will show the caption and navbar on mobile devices
-	});
-/*
-
-
-
-	$( '.swipebox' ).swipebox( {
-		useCSS : true, // false will force the use of jQuery for animations
-		useSVG : true, // false to force the use of png for buttons
-		initialIndexOnArray : 0, // which image index to init when a array is passed
-		hideCloseButtonOnMobile : false, // true will hide the close button on mobile devices
-		removeBarsOnMobile : false, // false will show top bar on mobile devices
-		hideBarsDelay : 3000, // delay before hiding bars on desktop
-		videoMaxWidth : 1140, // videos max width
-		beforeOpen: function() {}, // called before opening
-		afterOpen: null, // called after opening
-		afterClose: function() {}, // called after closing
-		loopAtEnd: false // true will return to the first image after the last image is reached
-	} );
-*/
-
 	$('.locationtabs').click(function(){
 		var id = $(this).attr('id').replace('tabs_','');
 		$('.locationtabs').removeClass('on');
@@ -365,30 +318,6 @@ function callTmapNavi(md){
 		initialize(id);
 	}).css('cursor','pointer');
 
-	$('.wedding_kimnavi,.party_kimnavi,.fbirthday_kimnavi,.ceremony_kimnavi').click(function(){
-		var id = $(this).attr('class').replace('nav_btn nav_kimnavi ','').replace('_kimnavi','').replace('btn_','').replace('ui-body-d ui-btn-nav ','').replace('ui-block-a cont_box3 ','');
-		
-		callKakaoNavi(id);
-	});
-
-	$('.wedding_ollehnavi,.party_ollehnavi,.fbirthday_ollehnavi,.ceremony_ollehnavi').click(function(){
-		var id = $(this).attr('class').replace('nav_btn nav_ollehnavi ','').replace('_ollehnavi','').replace('btn_','').replace('ui-body-d ui-btn-nav ','').replace('ui-block-b cont_box4 ','');
-
-		callOllehNavi(id);
-	});
-
-	$('.ceremony_tmapnavi').click(function(){
-		callTmapNavi('ceremony');
-	});
-
-
-	$('#btn_line').click(function(){
-			alert('모바일 기기에서만 사용 가능한 기능입니다.');
-	});
-
-	//$('.btn_send_kakao').click(function(){
-	//	alert('모바일 기기에서만 사용 가능한 기능입니다.');
-	//});
 
 	function setLocationInfoHeight(){
 	}
@@ -481,7 +410,7 @@ Start of first page: #one -->
 		<div class="ui-grid-a txt-tit-box">
 			<div class="txt-type2">
 <p><br /><br /></p>
-<p id="sk_topinfo_suject">저희 드디어 결혼합니다♥</p>
+<p id="sk_topinfo_subject">저희 드디어 결혼합니다♥</p>
 <p><br /></p>
 <p id="sk_weddinginfo">2017.08.27. 일요일. 낮 12시</p>
 <p>여의도웨딩컨벤션 3층<br />그랜드볼룸 홀</p>
